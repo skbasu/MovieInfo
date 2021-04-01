@@ -1,0 +1,55 @@
+@import url("https://fonts.googleapis.com/css2?family=Noto+Sans+JP&display=swap");
+
+.row_head {
+  color: white;
+  margin-top: 20px;
+  margin-left: 10px;
+  margin-bottom: 10px;
+  font-size: 20px;
+  font-family: "Noto Sans JP", sans-serif;
+}
+.heading {
+  margin-left: 10px;
+}
+
+.row_posters {
+  display: flex;
+  padding: 15px;
+  overflow-y: hidden;
+  overflow-x: scroll;
+}
+.row_posters::-webkit-scrollbar {
+  display: none;
+}
+
+.row_poster {
+  min-width: 220px;
+  object-fit: contain;
+  width: 100%;
+  max-height: 270px;
+  transition: transform 450ms;
+}
+
+.row_poster:hover {
+  transform: scale(1.08);
+}
+
+@media (max-width: 1000px) {
+  .row_poster {
+    max-height: 260px;
+    transition: none;
+    margin-right: 10px;
+  }
+  .row_poster:hover {
+    transform: none;
+  }
+  .row_posters {
+    display: flex;
+    overflow-y: hidden;
+    overflow-x: scroll;
+    padding: 10px;
+  }
+  .row_head {
+    margin-left: 10px;
+  }
+}

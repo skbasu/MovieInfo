@@ -1,0 +1,35 @@
+.navbar{
+    position: fixed;
+    top: 0;
+    height: 30px;
+    width: 100%;
+    z-index: 1;
+    padding: 20px;
+
+    /* Animations */
+    transition-timing-function: ease-in;
+    transition: all 0.5s;
+}
+
+.nav_logo{
+    position: fixed;
+    width: 50px;
+    left: 20px;
+    object-fit: contain;
+}
+
+.nav_avatar{
+    position: fixed;
+    width: 35px;
+    right: 20px;
+    object-fit: contain;
+}
+.navbar_black{
+    background-color: #111;
+}
+
+@media (max-width: 1198px){
+    .nav_logo{
+        width: 50px;
+    }
+}

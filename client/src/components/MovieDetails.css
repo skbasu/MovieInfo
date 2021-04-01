@@ -1,0 +1,116 @@
+@import url("https://fonts.googleapis.com/css2?family=Noto+Sans+JP&display=swap");
+.persistant__nav{
+    position: fixed;
+    top: 0;
+    height: 30px;
+    width: 100%;
+    z-index: 1;
+    padding: 20px;
+    background-color: black;
+}
+.back_icon{
+    margin-top: 70px;
+    padding-top: 10px;
+    margin-left: 30px;
+    margin-right: 200px;
+    cursor: pointer;
+}
+
+.movie__details{
+    color: white;
+}
+
+.head_info{
+    margin-top: 45px;
+    padding-left: 40px;
+    padding-bottom: 30px;
+    display: flex;
+    justify-content: space-between;
+}
+.release{
+    margin-left: 3px;
+    margin-bottom: 10px;
+}
+
+.movie__contents{
+    font-family: "Noto Sans JP", sans-serif;
+    flex: 0.6;
+}
+
+.movie_poster{
+    flex: 0.4;
+    margin-top: -50px;
+}
+
+.movie_head{
+    margin-bottom: 10px;
+}
+.view{
+    margin: 5px;
+}
+.movie_desc{
+    font-size: 20px;
+    margin-top: 25px;
+    max-width: 500px;
+    min-width: 200px;
+}
+.movie_image{
+    margin-top: -20px;
+    margin-right: 40px;
+    width: 100%;
+    max-width: 420px;
+    height: 440px;
+    min-width: 200px;
+    min-height: 250px;
+}
+
+.tabs{
+    margin-left: 20px;
+    margin-right: 100px;
+}
+
+@media (max-width: 1000px){
+    .head_info{
+        flex-direction: column-reverse;
+        padding-left: 25px;
+        text-align: center;
+    }
+    .back_icon{
+        margin-top: 70px;
+        padding-top: 10px;
+        margin-left: 20px;
+        margin-bottom: 10px;
+    }
+    .movie_image{
+        margin-top: 20px;
+        margin-right: 20px;
+        width: 100%;
+        max-width: 300px;
+        height: 350px;
+        min-width: 200px;
+        min-height: 250px;
+    }
+    .movie_head{
+        margin-top: 10px;
+        margin-bottom: 10px;
+        text-align: start;
+    }
+    .movie_desc{
+        text-align: start;
+        font-size: 18px;
+        margin-top: 25px;
+        max-width: 335px;
+        min-width: 200px;
+        margin-right: 10px;
+    }
+    .view{
+        text-align: start;
+    }
+    .release{
+        text-align: start;
+    }
+    .tabs{
+        margin-left: 20px;
+        margin-right: 20px;
+    }
+}
